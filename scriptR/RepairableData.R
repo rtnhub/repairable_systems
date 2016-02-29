@@ -85,29 +85,3 @@ require(lattice)
 dotplot(as.matrix(db), main = "Failures and censorings times", 
         xlab = "time (hours)", ylab = "system", pch = 19)
 
-
-
-
-
-
-
-
-
-
-
-
-# for (i in 1:ndata){
-#     aux1 <- sum(is.na(db[i, ]) == FALSE)
-#     if(aux1 == 1){
-#         failureTimes    <- rbind(failureTimes, c(db[i, 1], rep(0,(nfailureTimes-aux1))))     
-#         censorTime[i]   <- db[i, 1]
-#     } else {
-#           aux2          <- diff(as.numeric(db[i,1:aux1 ]), lag = 1)
-#           failureTimes  <- rbind(failureTimes, c(db[i,1], aux2, rep(0,nfailureTimes-aux2+1)))
-#           censorTime[i] <- db[i, aux1]
-#     }
-# }
-
-
-
-
